@@ -18,10 +18,10 @@ const AllPlanets = ({planets,addToFavorite}) => {
                 {planets.length > 0 && planets.map((planet) => 
                   <div key={planet?.id}>
                     <Row className="mb-4">
-                      <Col md={10}>
+                      <Col md={10} xs={7}>
                         <h5 className="text-secondary">{planet?.name}</h5>
                       </Col>
-                      <Col >
+                      <Col md={2} xs={5}>
                         {planet.isFavourite === true ?
                             <img onClick = {() => {addToFavorite(planet?.id)}} 
                             src={Heart} alt="Add tO Favourites" width={20}/> 

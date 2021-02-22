@@ -55,7 +55,7 @@ useEffect(() => {
       <Col md={3}></Col>
         <Col md={6}>
       <Nav pills className="tabColor">
-        <Col md={6}>
+        <Col md={6} xs={6}>
         <NavItem>
           <NavLink
             className={classnames({ active: activeTab === '1' })}
@@ -66,7 +66,7 @@ useEffect(() => {
           </NavLink>
         </NavItem>
         </Col>
-        <Col md={6}>
+        <Col md={6} xs={6}>
         <NavItem>
           <NavLink
             className={classnames({ active: activeTab === '2' })}
